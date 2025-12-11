@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan RiaUIUX</title>
+    
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">RiaUIUX.com</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+                <li>
+                    <button id="dark-mode-toggle" class="mode-toggle">
+                        ☀️/🌙
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section parallax-bg" style="background-color: var(--primary-color);">
+            <div class="hero-content reveal fade-bottom">
+                <h1>Desain Web Masa Kini</h1>
+                <p>Parallax, Dark Mode, dan Interaksi JavaScript Dinamis.</p>
+                <button id="cta-button" class="cta-button">Lihat Demo</button>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2 class="reveal fade-bottom">Tentang Kami</h2>
+            <div class="glass-card reveal fade-bottom">
+                <h3>Visi dan Misi</h3>
+                <p>Kami menciptakan pengalaman digital yang mulus dan indah. Kami hadir untuk menciptakan solusi web yang tidak hanya fungsional tetapi juga memukau secara visual, menggunakan teknologi terkini.</p>
+            </div>
+        </section>
+        
+        <section id="services" class="content-section">
+            <h2 class="reveal fade-bottom">Layanan Unggulan Kami</h2>
+            
+            <div class="card-grid">
+                <div class="service-card reveal fade-bottom delay-1">
+                    <i class="icon-design">🎨</i>
+                    <h3>Desain Responsif</h3>
+                    <p>Memastikan tampilan memukau di semua perangkat, dari desktop hingga mobile.</p>
+                </div>
+                
+                <div class="service-card reveal fade-bottom delay-2">
+                    <i class="icon-dev">💻</i>
+                    <h3>Pengembangan Cepat</h3>
+                    <p>Menggunakan framework modern untuk performa tinggi dan keamanan terjamin.</p>
+                </div>
+                
+                <div class="service-card reveal fade-bottom delay-3">
+                    <i class="icon-seo">📈</i>
+                    <h3>Optimasi SEO</h3>
+                    <p>Membantu website Anda ditemukan dengan mudah oleh mesin pencari.</p>
+                }
+            </div>
+        </section>
+        
+        <section class="parallax-bg-secondary" style="background-color:#333333;">
+            <div class="parallax-content reveal fade-bottom">
+                <h3>Visual yang Menakjubkan</h3>
+                <p>Detail membuat perbedaan besar dalam proyek Anda.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <h2 class="reveal fade-bottom">Hubungi Kami</h2>
+            <p class="reveal fade-bottom">Kami siap membantu mewujudkan proyek impian Anda.</p>
+
+            <form class="contact-form reveal fade-bottom" name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan Anda</label>
+                    <textarea id="pesan" name="pesan" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Kirim Pesan</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Website Keren. Dibuat dengan HTML, CSS, dan JS Modern.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
